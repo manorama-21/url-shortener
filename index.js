@@ -18,10 +18,10 @@ app.listen(port,()=>{
     console.log(`server running ${port}`);
 })
 
-app.get('/delete/:id',async(req,res)=>
-{
-        const {id}=req.params;
-    deleteURL =await URL.findByIdAndDelete({_id:id});
+// app.get('/delete/:id',async(req,res)=>
+// {
+//         const {id}=req.params;
+//     deleteURL =await URL.findByIdAndDelete({_id:id});
    
-    res.redirect('/')
-})
+//     res.redirect('/')
+// })
